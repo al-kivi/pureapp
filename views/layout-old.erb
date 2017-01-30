@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>My Sinatra Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" >
+    <link rel="stylesheet" href="/css/style.css" > 
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>My Sinatra Website</h1>
+        <h2>A Simple Site made with Sinatra and ERB!</h2>
+      </div>
+      <div id="nav">
+        <ol>
+          <a>(href="/")
+            <li>Home</li>
+          </a>
+          <a>(href="about")
+            <li>About</li>
+          </a>
+        </ol>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+      <div id="side_bar">
+        <h1>Side Bar</h1>
+        <p>
+          This is the side bar of the webpage
+        </p>
+      </div>
+      <div id="footer">
+        <p>
+          This is the footer.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
